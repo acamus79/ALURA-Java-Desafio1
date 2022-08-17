@@ -53,6 +53,7 @@ public class Moneda {
             conn.connect();
           
             if(conn.getResponseCode()!=200){
+                JOptionPane.showMessageDialog(null, "Fallo la comunicacion a la API-dolar-arg", "ERROR!", JOptionPane.WARNING_MESSAGE, new ImageIcon("assets/warning.png"));
                 throw new RuntimeException("Ocurrio un Error "+ conn.getResponseCode());
             }else{
                 StringBuilder info = new StringBuilder();
