@@ -16,12 +16,13 @@ import org.json.JSONObject;
  * @author https://github.com/acamus79
  */
 public class Moneda {
-    
+
     /**
      * Metodo publico recibe un valor Double, solicita el tipo de cambio y
      * devuelve un String con el resultado
+     *
      * @param val
-     * @return 
+     * @return
      */
     public String cambio(Double val) {
         Object[] options = {"Oficial", "Blue", "Bolsa"};
@@ -48,13 +49,14 @@ public class Moneda {
         DecimalFormat decimalFormat = new DecimalFormat("#,##0.00");
         return val.toString() + " US$ " + op + " en ARG es: $ " + decimalFormat.format(val * cambio);
     }
-    
+
     /**
      * Metodo privado que recive un String endpoint y realiza la coneccion a la
-     * API para obtener el valor del cambio peso/dolar del dia, transforma el 
+     * API para obtener el valor del cambio peso/dolar del dia, transforma el
      * resultado en un valor Double y lo devuelve
+     *
      * @param op
-     * @return 
+     * @return
      */
     private Double dolar(String endpoint) {
         try {

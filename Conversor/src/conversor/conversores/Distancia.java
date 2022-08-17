@@ -12,51 +12,53 @@ import javax.swing.JOptionPane;
  * @author https://github.com/acamus79
  */
 public class Distancia {
-    
-     /**
+
+    /**
      * Metodo público que recibe un valor Double solicita el tipo de conversión
      * y, devuelve un String con el resultado
+     *
      * @param val
-     * @return 
+     * @return
      */
-    public String valor(Double val){
+    public String valor(Double val) {
         Object[] options = {"Milla's", "Yarda's", "Pulgada's"};
         int x = JOptionPane.showOptionDialog(null, "Selecciones a que convertir",
                 "Conversion de Distancia",
                 JOptionPane.DEFAULT_OPTION, JOptionPane.ERROR_MESSAGE, new ImageIcon("assets/pesoMedida.png"), options, options[2]);
-       
+
         Double resultado;
         String ret = "";
         DecimalFormat df = new DecimalFormat("#,##0.00");
         switch (x) {
             case 0:
-                resultado = this.conversion(val,0);
-                ret = val.toString()+" mts en Millas es = "+df.format(resultado);
+                resultado = this.conversion(val, 0);
+                ret = val.toString() + " mts en Millas es = " + df.format(resultado);
                 break;
             case 1:
-                resultado = this.conversion(val,1);
-                ret = val.toString()+" mts en Yardas es = "+df.format(resultado);
+                resultado = this.conversion(val, 1);
+                ret = val.toString() + " mts en Yardas es = " + df.format(resultado);
                 break;
             case 2:
-                resultado = this.conversion(val,2);
-                ret = val.toString()+" mts en Pulgadas es = "+df.format(resultado);
+                resultado = this.conversion(val, 2);
+                ret = val.toString() + " mts en Pulgadas es = " + df.format(resultado);
                 break;
         }
-        
+
         return ret;
-        
+
     }
-    
-     /**
-     * Metodo privado que recive un valor Double y una opcion int, segun la 
+
+    /**
+     * Metodo privado que recive un valor Double y una opcion int, segun la
      * opcion realiza la conversion y devuelve el resultado convertido
+     *
      * @param val
      * @param op
      * @return Double
      */
-    private Double conversion(Double val, int op){
+    private Double conversion(Double val, int op) {
         Double res = 0.0;
-        switch (op){
+        switch (op) {
             case 0:
                 res = val / 1609;
                 break;
