@@ -35,7 +35,6 @@ public class Menu {
         
         switch ((String) seleccion) {
             case "Dolares U$$ a Pesos ARG$":
-                System.out.println("El usuario ha elegido " + seleccion);
                 val = this.valor();
                 if(val > 0 && !val.isNaN()){
                     Moneda m = new Moneda();
@@ -84,7 +83,8 @@ public class Menu {
     
     /**
      * Muestra los Resultados de las conversionces
-     * @param convertido 
+     * @param convertido
+     * @param ic
      */
     private void resultado(String convertido, ImageIcon ic){
         Object[] options = {"SALIR", "CONVERSOR"};

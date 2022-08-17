@@ -13,6 +13,12 @@ import javax.swing.JOptionPane;
  */
 public class Distancia {
     
+     /**
+     * Metodo público que recibe un valor Double solicita el tipo de conversión
+     * y, devuelve un String con el resultado
+     * @param val
+     * @return 
+     */
     public String valor(Double val){
         Object[] options = {"Milla's", "Yarda's", "Pulgada's"};
         int x = JOptionPane.showOptionDialog(null, "Selecciones a que convertir",
@@ -41,6 +47,13 @@ public class Distancia {
         
     }
     
+     /**
+     * Metodo privado que recive un valor Double y una opcion int, segun la 
+     * opcion realiza la conversion y devuelve el resultado convertido
+     * @param val
+     * @param op
+     * @return Double
+     */
     private Double conversion(Double val, int op){
         Double res = 0.0;
         switch (op){
