@@ -3,7 +3,9 @@
 </p>
 <h1 align="center">CONVERSOR</h1>
 <p align="center">
-<a href="https://github.com/topics/java" target="_blank"><img align="center" alt="Made With JAVA"  src="https://img.shields.io/badge/Made%20With-Java-blue"></a>
+<a href="https://acamus79.github.io" target="_blank"><img align="center" alt="Portfolio"  src="https://forthebadge.com/images/badges/built-with-love.svg"></a>
+<a href="https://github.com/acamus79/ALURA-Java-Desafio1/blob/main/Conversorv1.0.1b.zip" target="_blank"><img align="center" alt="Check-It-Out"  src="https://forthebadge.com/images/badges/check-it-out.svg"></a>
+<a href="https://github.com/topics/java" target="_blank"><img align="center" alt="Made With JAVA"  src="https://forthebadge.com/images/badges/made-with-java.svg"></a>
 </p>
 
 
@@ -21,6 +23,10 @@ Es una aplicación en JAVA 17 que mediante JOptionPanel permite convertir dólar
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/85143329/184927134-3e698dbf-a509-40aa-ac46-e5cfddb6c110.gif">
+</p>
+
+<p align="center">
+<a href="https://github.com/acamus79" target="_blank"><img align="center" alt="Works on myMachine" src="https://forthebadge.com/images/badges/works-on-my-machine.svg"></a>
 </p>
 
 
